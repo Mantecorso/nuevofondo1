@@ -38,7 +38,7 @@ body {
 
 .bubbles span:nth-child(even) {
     background: #ff2d;
-    box-shadow: 0 0 0 10px #ff2d,
+    box-shadow: 0 0 0 10px #ff2e,
     0 0 50px #ff2d,
     0 0 100px #ff2d;
 }
@@ -49,5 +49,23 @@ body {
     }
     100% {
         transform: translateY(-10vh) scale(1);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .bubbles span {
+        width: 10px;
+        height: 10px;
+        background: #8b3df7;
+        box-shadow: 0 0 0 5px #3d40f7,
+        0 0 5px #3d40f7,
+        0 0 10px #3d40f7;
+    }
+
+    .bubbles span:nth-child(even) {
+        background: rgba(185, 255, 34, 0.867);
+        box-shadow: 0 0 0 5px #ff2e,
+        0 0 5px rgba(185, 255, 34, 0.867),
+        0 0 10px rgba(185, 255, 34, 0.867);
     }
 }
